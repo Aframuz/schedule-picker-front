@@ -6,7 +6,7 @@ const FileContent = () => {
     useEffect(()=> {
         const fetchFileContent = async () => {
             try {
-                const response = await fetch('./public/schedules.txt');
+                const response = await fetch('schedules.txt');
                 const text = await response.text();
                 setContent(text)
             } catch( error){
